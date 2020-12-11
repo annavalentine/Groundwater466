@@ -47,15 +47,15 @@ def df(meqs, norms, p_meq, Cat_T, An_T):
     MM = [Ca_M, Mg_M, Na_M, K_M, SO4_M, HCO3_M, CO3_M, Cl_M]
     
     names = ['Ca', 'Mg', 'Na', 'K', 'SO4', 'HCO3', 'CO3', 'Cl']
-    cols = ['mg/L', 'Molecular Mass', 'Normality']
+    cols = ['mg/L', 'Molecular Mass (u)', 'Normality (meq/L)']
     
     df = pd.DataFrame([meqs, MM, norms],  index = cols, columns = names)
     df = df.round(2)
     print(df.to_markdown())
     
     print("")
-    print("Total Anions:", An_T)
-    print("Total Cations:", Cat_T)
+    print("Total Anions (meq/L):", An_T)
+    print("Total Cations (meq/L):", Cat_T)
     print("")
     
     names2 = ['Ca', 'Mg', 'Na + K', 'SO4', 'CO3 + HCO3', 'Cl']
