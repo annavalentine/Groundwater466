@@ -1,5 +1,5 @@
 # Piper Diagram Generator
-## Created for: Groundwater Engineering 466, CO School of Mines
+## Created for: Groundwater Engineering @ CO School of Mines
 
 ### Description:
 This notebook helps to create a piper diagram from concentrations of cations/anions in water sample. 
