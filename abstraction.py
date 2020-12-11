@@ -11,7 +11,7 @@ def hi():
 def plot_piper(Ca, Mg, Na, K, SO4, HCO3, CO3, Cl):
     
     #read in our awesome figure
-    img = imageio.imread("../PiperDiagramColors.jpg")
+    img = imageio.imread("PiperDiagramColors.jpg")
     
     Ca_N, Mg_N, Na_N, K_N, SO4_N, HCO3_N, CO3_N, Cl_N, Cat_T, An_T = normalities(Ca, Mg, Na, K, SO4, HCO3, CO3, Cl)
     Ca_P, Mg_P, NaK_P, SO4_P, CO3_P, Cl_P = meq(Ca_N, Mg_N, Na_N, K_N, SO4_N, HCO3_N, CO3_N, Cl_N, Cat_T, An_T)
